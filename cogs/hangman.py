@@ -6,38 +6,7 @@ from .utils import checks
 import re
 import random
 
-phrases = ["Eat My Hat", "Par For the Course", "Raining Cats and Dogs", "Roll With the Punches",
-           "Curiosity Killed The Cat", "Man of Few Words", "Cry Over Spilt Milk", "Scot-free", "Rain on Your Parade",
-           "Go For Broke", "Shot In the Dark", "Mountain Out of a Molehill", "Jaws of Death", "A Dime a Dozen",
-           "Jig Is Up", "Elvis Has Left The Building", "Wake Up Call", "Jumping the Gun", "Up In Arms",
-           "Beating Around the Bush", "Flea Market", "Playing For Keeps", "Cut To The Chase", "Fight Fire With Fire",
-           "Keep Your Shirt On", "Poke Fun At", "Everything But The Kitchen Sink", "Jaws of Life",
-           "What Goes Up Must Come Down", "Give a Man a Fish", "Plot Thickens - The",
-           "Not the Sharpest Tool in the Shed", "Needle In a Haystack", "Right Off the Bat", "Throw In the Towel",
-           "Down To Earth", "Lickety Split", "I Smell a Rat", "Long In The Tooth",
-           "You Can't Teach an Old Dog New Tricks", "Back To the Drawing Board", "Down For The Count",
-           "On the Same Page", "Under Your Nose", "Cut The Mustard",
-           "If You Can't Stand the Heat, Get Out of the Kitchen", "Knock Your Socks Off", "Playing Possum",
-           "No-Brainer", "Money Doesn't Grow On Trees", "In a Pickle", "In the Red", "Fit as a Fiddle", "Hear, Hear",
-           "Hands Down", "Off One's Base", "Wild Goose Chase", "Keep Your Eyes Peeled", "A Piece of Cake",
-           "Foaming At The Mouth", "Go Out On a Limb", "Quick and Dirty", "Hit Below The Belt",
-           "Birds of a Feather Flock Together", "Wouldn't Harm a Fly", "Son of a Gun",
-           "Between a Rock and a Hard Place", "Down And Out", "Cup Of Joe", "Down To The Wire",
-           "Don't Look a Gift Horse In The Mouth", "Talk the Talk", "Close But No Cigar",
-           "Jack of All Trades Master of None", "High And Dry", "A Fool and His Money are Soon Parted",
-           "Every Cloud Has a Silver Lining", "Tough It Out", "Under the Weather", "Happy as a Clam",
-           "An Arm and a Leg", "Read 'Em and Weep", "Right Out of the Gate", "Know the Ropes",
-           "It's Not All It's Cracked Up To Be", "On the Ropes", "Burst Your Bubble", "Mouth-watering",
-           "Swinging For the Fences", "Fool's Gold", "On Cloud Nine", "Fish Out Of Water", "Ring Any Bells?",
-           "There's No I in Team", "Ride Him, Cowboy!", "Top Drawer", "No Ifs, Ands, or Buts",
-           "You Can't Judge a Book By Its Cover", "Don't Count Your Chickens Before They Hatch", "Cry Wolf",
-           "Beating a Dead Horse", "Goody Two-Shoes", "Heads Up", "Drawing a Blank", "Keep On Truckin'", "Tug of War",
-           "Short End of the Stick", "Hard Pill to Swallow", "Back to Square One", "Love Birds", "Dropping Like Flies",
-           "Break The Ice", "Knuckle Down", "Lovey Dovey", "Greased Lightning", "Let Her Rip", "All Greek To Me",
-           "Two Down, One to Go", "What Am I, Chopped Liver?", "It's Not Brain Surgery", "Like Father Like Son",
-           "Easy As Pie", "Elephant in the Room", "Quick On the Draw", "Barking Up The Wrong Tree",
-           "A Chip on Your Shoulder", "Put a Sock In It", "Quality Time", "Yada Yada", "Head Over Heels",
-           "My Cup of Tea", "Ugly Duckling", "Drive Me Nuts", "When the Rubber Hits the Road"]
+phrases = ["Eat My Hat"]
 
 
 class Game:
@@ -154,7 +123,7 @@ class Hangman:
     async def create_hangman(self, ctx):
         """This is used to create a new hangman game
         Due to the fact that I might not be able to delete a message, I will PM you and ask for the phrase you want.
-        The phrase needs to be under 30 characters"""
+        The phrase needs to be under 40 characters"""
 
         # Only have one hangman game per server, since anyone
         # In a server (except the creator) can guess towards the current game
