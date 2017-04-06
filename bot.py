@@ -16,17 +16,11 @@ extensions = ['cogs.interaction',
               'cogs.mod',
               'cogs.owner',
               'cogs.stats',
-              'cogs.playlist',
-              'cogs.twitch',
-              'cogs.picarto',
-              'cogs.overwatch',
-              'cogs.links',
-              'cogs.tags',
+              'cogs.picarto,
+              'cogs.links',  
               'cogs.roles',
-              'cogs.strawpoll',
-              'cogs.tictactoe',
-              'cogs.hangman',
-              'cogs.statsupdate']
+              'cogs.hangman']
+           
 
 opts = {'command_prefix': config.command_prefix,
         'description': config.bot_description,
